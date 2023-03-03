@@ -37,5 +37,10 @@ jobs:
     needs: build
     runs-on: self-hosted
     steps:
-      - name: Deploy
+      - name: Get artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: artifact-files
+      - name: output
+        run: ls
         run: echo "Deploying..."
