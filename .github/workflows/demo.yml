@@ -29,8 +29,10 @@ jobs:
       - name: upload artifact
         uses: actions/checkout@v3
         with:
-          name: buid-file
-          path: target
+          name: dist-files
+          path: |
+            dist
+            package.json
   deploy:
     needs: build
     runs-on: self-hosted
