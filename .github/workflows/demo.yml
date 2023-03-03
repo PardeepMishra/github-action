@@ -43,4 +43,3 @@ jobs:
           name: artifact-files
       - name: output
         run: ls
-        run: echo "Deploying..."
