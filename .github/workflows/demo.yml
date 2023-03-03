@@ -41,5 +41,7 @@ jobs:
         uses: actions/download-artifact@v3
         with: 
           name: artifact-files
+      -name: oputput content
+       run: ls
       - name: Deploy
         run: echo "deploy"
